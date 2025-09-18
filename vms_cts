@@ -1,0 +1,4 @@
+Name:eth0
+IPv4/CIDR:10.0.0.1/29
+Gateway (IPv4):10.0.0.0
+Bridge:vmbr1

@@ -1,0 +1,5 @@
+
+iptables -t nat -A PREROUTING -i vmbr0 -p ####(Network Protocol) --dport ####(Port) -j DNAT --to-destination 10.0.0.1(VM/CT-IPv4):####(Port)
+
+For Example: iptables -t nat -A PREROUTING -i vmbr0 -p tcp --dport 221 -j DNAT --to-destination 10.0.0.1:22
+- ssh user@public_ip -p 221 - to ssh directly into the vm/ct. - make sure you execute the rc.local file and that it has the permission it needs.
